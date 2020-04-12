@@ -4,7 +4,7 @@ class Student {
 	String lastName;
 	int grades=[6,6,7,8,5,8,9,10,8,9,7,7]
 	//TODO constructor
-	 StudentString index, String firstName,String lastName,int grades)
+	 Student(String index, String firstName,String lastName,int grades)
 	{
 		this.index=index;
 		this.firstName=firstName;
@@ -48,3 +48,25 @@ class Student {
 	return kolku;
 	}
 }
+
+class Faculty
+{
+	Student studenti[];
+	String facultyName;
+	
+Faculty(Student studenti[],String facultyName)
+{
+	this.studenti=studenti;
+	this.facultyName=facultyName;
+}
+double prosek()
+{
+suma=0;
+	for(int i=0;i<len(studenti);i++)
+	{
+		suma+=this.studenti[i].getAverage();
+	}
+return suma;
+}
+}
+
